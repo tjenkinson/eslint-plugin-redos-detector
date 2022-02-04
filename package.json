@@ -31,7 +31,6 @@
     "prepare": "husky install",
     "lint-staged": "lint-staged"
   },
-  "dependencies": {},
   "devDependencies": {
     "@rollup/plugin-node-resolve": "13.1.3",
     "@types/eslint": "8.4.1",
