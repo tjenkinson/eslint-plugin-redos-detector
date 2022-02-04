@@ -13,7 +13,7 @@ npm i eslint --save-dev
 Next, install `eslint-plugin-redos-detector`:
 
 ```sh
-$ npm i --save-dev eslint-plugin-redos-detector
+npm i --save-dev eslint-plugin-redos-detector
 ```
 
 ## Usage
