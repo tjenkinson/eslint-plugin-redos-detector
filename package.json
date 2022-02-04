@@ -22,6 +22,9 @@
     "url": "https://github.com/tjenkinson/eslint-plugin-redos-detector/issues"
   },
   "homepage": "https://github.com/tjenkinson/eslint-plugin-redos-detector#readme",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "rm -rf dist && rollup --config rollup.config.js",
     "watch": "rollup --config rollup.config.js --watch",
