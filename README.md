@@ -1,6 +1,6 @@
 # eslint-plugin-redos-detector
 
-An eslint plugin that detects vulnerable regex using "[RedosDetector](https://github.com/tjenkinson/redos-detector)". It processes all [RegExp](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp) literals. I.e. `/ab+c/` but not `new RegExp('ab+c')`.
+An ESLint plugin that detects vulnerable regex using "[RedosDetector](https://github.com/tjenkinson/redos-detector)". It processes all [RegExp](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp) literals. I.e. `/ab+c/` but not `new RegExp('ab+c')`.
 
 ## Installation
 
