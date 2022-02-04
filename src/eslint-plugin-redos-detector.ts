@@ -62,7 +62,7 @@ export const rules: Record<string, Rule.RuleModule> = {
           for (const flag of flags.split('')) {
             if (flag === 'u') {
               unicode = true;
-            } else {
+            } else if (flag !== 'g') {
               if (!ignoreError) {
                 context.report({
                   node,
