@@ -12,6 +12,16 @@
     "pattern",
     "redos-detector"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tjenkinson/eslint-plugin-redos-detector.git"
+  },
+  "author": "Tom Jenkinson <tom@tjenkinson.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tjenkinson/eslint-plugin-redos-detector/issues"
+  },
+  "homepage": "https://github.com/tjenkinson/eslint-plugin-redos-detector#readme",
   "scripts": {
     "build": "rm -rf dist && rollup --config rollup.config.js",
     "watch": "rollup --config rollup.config.js --watch",
@@ -42,6 +52,5 @@
   },
   "peerDependencies": {
     "eslint": ">=6"
-  },
-  "license": "MIT"
+  }
 }
