@@ -10,7 +10,7 @@ You'll first need to install [ESLint](https://github.com/eslint/eslint):
 npm i eslint --save-dev
 ```
 
-Next, install `eslint-plugin-redos-detector`:
+Next, install [`eslint-plugin-redos-detector`](https://www.npmjs.com/package/eslint-plugin-redos-detector):
 
 ```sh
 npm i --save-dev eslint-plugin-redos-detector
