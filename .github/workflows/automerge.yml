@@ -14,3 +14,4 @@ jobs:
       - uses: tjenkinson/gh-action-auto-merge-dependency-updates@v1
         with:
           allowed-actors: renovate[bot]
+          package-block-list: redos-detector
