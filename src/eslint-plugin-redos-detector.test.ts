@@ -1,5 +1,4 @@
 import { rules } from './eslint-plugin-redos-detector';
-
 import { RuleTester } from 'eslint';
 
 const ruleTester = new RuleTester();
@@ -25,7 +24,7 @@ describe('Eslint Plugin Redos Detector', () => {
 
         const invalid: RuleTester.InvalidTestCase[] = [
           {
-            code: '/a?a?/',
+            code: '/a+a+/',
             options: [{ ignoreError }],
             errors: 1,
           },

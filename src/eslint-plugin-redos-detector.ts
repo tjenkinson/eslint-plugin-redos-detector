@@ -4,7 +4,7 @@ import * as ESTree from 'estree';
 
 export type Options = {
   maxSteps?: number;
-  maxResults?: number;
+  maxBacktracks?: number;
   timeout?: number;
   ignoreError?: boolean;
 };
@@ -25,7 +25,7 @@ export const rules: Record<string, Rule.RuleModule> = {
               type: 'number',
               minimum: 1,
             },
-            maxResults: {
+            maxBacktracks: {
               type: 'number',
               minimum: 1,
             },
@@ -44,7 +44,7 @@ export const rules: Record<string, Rule.RuleModule> = {
     create: (context: Rule.RuleContext) => {
       const {
         maxSteps,
-        maxResults,
+        maxBacktracks,
         timeout,
         ignoreError = false,
       }: Options = context.options[0] || {};
@@ -77,7 +77,7 @@ export const rules: Record<string, Rule.RuleModule> = {
           try {
             result = isSafePattern(pattern, {
               maxSteps,
-              maxResults,
+              maxBacktracks,
               timeout,
               unicode,
             });
