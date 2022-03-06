@@ -1,6 +1,6 @@
 {
   "extends": ["config:base"],
-  "labels": ["dependencies"],
+  "labels": ["dependencies", "skip-release-notes"],
   "prHourlyLimit": 0,
   "prCreation": "not-pending",
   "prConcurrentLimit": 0,
@@ -9,6 +9,7 @@
   "rangeStrategy": "bump",
   "packageRules": [
     {
+      "labels": ["dependencies"],
       "matchPackageNames": ["redos-detector"],
       "stabilityDays": 0
     },
