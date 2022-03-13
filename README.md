@@ -55,5 +55,5 @@ Or do the following to provide options.
 
 - `ignoreError`: If `true` any error getting results be ignored. It's possible for the detection to fail with some patterns, or if the patten is malformed or uses unsupported features. See [this doc](https://github.com/tjenkinson/redos-detector/blob/main/README.md#options) for the type of errors. _(Default: `false`)_
 - `maxSteps`: See the option in [this doc](https://github.com/tjenkinson/redos-detector/blob/main/README.md#options) with the same name. _(Default: See linked doc)_
-- `maxResults`: See the option in [this doc](https://github.com/tjenkinson/redos-detector/blob/main/README.md#options) with the same name. _(Default: See linked doc)_
+- `maxBacktracks`: See the option in [this doc](https://github.com/tjenkinson/redos-detector/blob/main/README.md#options) with the same name. _(Default: See linked doc)_
 - `timeout`: See the option in [this doc](https://github.com/tjenkinson/redos-detector/blob/main/README.md#options) with the same name. _(Default: See linked doc)_
