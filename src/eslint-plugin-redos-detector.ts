@@ -27,7 +27,7 @@ export const rules: Record<string, Rule.RuleModule> = {
             },
             maxBacktracks: {
               type: 'number',
-              minimum: 1,
+              minimum: 0,
             },
             timeout: {
               type: 'number',
