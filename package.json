@@ -35,7 +35,7 @@
     "lint-staged": "lint-staged"
   },
   "devDependencies": {
-    "@rollup/plugin-node-resolve": "13.3.0",
+    "@rollup/plugin-node-resolve": "14.1.0",
     "@types/eslint": "8.4.6",
     "@types/jest": "28.1.8",
     "@types/node": "17.0.13",
