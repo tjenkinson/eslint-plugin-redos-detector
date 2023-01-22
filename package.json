@@ -40,7 +40,7 @@
     "@types/eslint": "8.4.10",
     "@types/jest": "29.2.5",
     "@types/node": "18.11.18",
-    "eslint": "8.31.0",
+    "eslint": "8.32.0",
     "husky": "8.0.3",
     "jest": "29.3.1",
     "lint-staged": "13.1.0",
