@@ -6,6 +6,7 @@ on:
 
 permissions:
   contents: read
+  id-token: write
 
 jobs:
   publish:
@@ -13,10 +14,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - name: Use Node.js 16
+      - name: Use Node.js 18
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18
       - name: set version
         run: |
           npm version --no-git-tag-version "$TAG"
@@ -32,7 +33,7 @@ jobs:
       - name: publish
         run: |
           echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> .npmrc
-          npm publish
+          npm publish --provenance
         env:
           CI: true
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
