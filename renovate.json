@@ -6,14 +6,14 @@
   "internalChecksAsSuccess": true,
   "prConcurrentLimit": 0,
   "stabilityDays": 7,
+  "prNotPendingHours": 0,
   "vulnerabilityAlerts": true,
   "rangeStrategy": "bump",
   "packageRules": [
     {
       "labels": ["dependencies"],
       "matchPackageNames": ["redos-detector"],
-      "stabilityDays": 0,
-      "prNotPendingHours": 0
+      "stabilityDays": 0
     },
     {
       "matchDepTypes": ["devDependencies"],
