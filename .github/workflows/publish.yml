@@ -6,6 +6,7 @@ on:
 
 permissions:
   contents: read
+  id-token: write
 
 jobs:
   publish:
@@ -32,7 +33,7 @@ jobs:
       - name: publish
         run: |
           echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> .npmrc
-          npm publish
+          npm publish --provenance
         env:
           CI: true
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
