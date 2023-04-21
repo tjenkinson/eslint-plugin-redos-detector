@@ -12,7 +12,8 @@
     {
       "labels": ["dependencies"],
       "matchPackageNames": ["redos-detector"],
-      "stabilityDays": 0
+      "stabilityDays": 0,
+      "prNotPendingHours": 0
     },
     {
       "matchDepTypes": ["devDependencies"],
