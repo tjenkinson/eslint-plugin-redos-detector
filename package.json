@@ -35,7 +35,7 @@
     "lint-staged": "lint-staged"
   },
   "devDependencies": {
-    "@rollup/plugin-node-resolve": "15.0.2",
+    "@rollup/plugin-node-resolve": "15.1.0",
     "@rollup/plugin-typescript": "11.1.1",
     "@types/eslint": "8.40.0",
     "@types/jest": "29.5.1",
