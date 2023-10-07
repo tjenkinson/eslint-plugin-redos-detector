@@ -57,10 +57,13 @@ export const rules: Record<string, Rule.RuleModule> = {
           }
           const { pattern, flags } = regexNode.regex;
 
+          let caseInsensitive = false;
           let unicode = false;
 
           for (const flag of flags.split('')) {
-            if (flag === 'u') {
+            if (flag === 'i') {
+              caseInsensitive = true;
+            } else if (flag === 'u') {
               unicode = true;
             } else if (flag !== 'g') {
               if (!ignoreError) {
@@ -73,12 +76,23 @@ export const rules: Record<string, Rule.RuleModule> = {
             }
           }
 
+          if (caseInsensitive && unicode) {
+            if (!ignoreError) {
+              context.report({
+                node,
+                message: `Flag "i" and "u" are not supported together.`,
+              });
+            }
+            return;
+          }
+
           let result: RedosDetectorResult;
           try {
             result = isSafePattern(pattern, {
               maxSteps,
               maxBacktracks,
               timeout,
+              caseInsensitive,
               unicode,
             });
           } catch (e: any) {
