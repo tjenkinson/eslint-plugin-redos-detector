@@ -39,7 +39,7 @@
     "@rollup/plugin-typescript": "11.1.5",
     "@types/eslint": "8.44.4",
     "@types/jest": "29.5.5",
-    "@types/node": "18.18.4",
+    "@types/node": "18.18.5",
     "eslint": "8.51.0",
     "husky": "8.0.3",
     "jest": "29.7.0",
