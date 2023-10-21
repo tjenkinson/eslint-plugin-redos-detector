@@ -5,8 +5,13 @@ function buildConfig({ input, output }) {
   return {
     input,
     plugins: [typescript(), resolve()],
-    onwarn: (e) => {
-      throw new Error(e);
+    onLog: (level, log, handler) => {
+      if (level === 'warn') {
+        // treat warnings as errors
+        handler('error', log);
+      } else {
+        handler(level, log);
+      }
     },
     output,
   };
