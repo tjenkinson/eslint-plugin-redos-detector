@@ -59,12 +59,15 @@ export const rules: Record<string, Rule.RuleModule> = {
 
           let caseInsensitive = false;
           let unicode = false;
+          let dotAll = false;
 
           for (const flag of flags.split('')) {
             if (flag === 'i') {
               caseInsensitive = true;
             } else if (flag === 'u') {
               unicode = true;
+            } else if (flag === 's') {
+              dotAll = true;
             } else if (flag !== 'g') {
               if (!ignoreError) {
                 context.report({
@@ -94,6 +97,7 @@ export const rules: Record<string, Rule.RuleModule> = {
               timeout,
               caseInsensitive,
               unicode,
+              dotAll,
             });
           } catch (e: any) {
             if (!ignoreError) {

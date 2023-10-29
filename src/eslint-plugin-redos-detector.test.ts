@@ -1,7 +1,7 @@
 import { rules } from './eslint-plugin-redos-detector';
 import { RuleTester } from 'eslint';
 
-const ruleTester = new RuleTester({ parserOptions: { ecmaVersion: 6 } });
+const ruleTester = new RuleTester({ parserOptions: { ecmaVersion: 'latest' } });
 
 describe('Eslint Plugin Redos Detector', () => {
   describe(`'no-unsafe-regex' rule`, () => {
@@ -18,6 +18,10 @@ describe('Eslint Plugin Redos Detector', () => {
           },
           {
             code: '/a/u',
+            options: [{ ignoreError }],
+          },
+          {
+            code: '/a/s',
             options: [{ ignoreError }],
           },
           ...(ignoreError
