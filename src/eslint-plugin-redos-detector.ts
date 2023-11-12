@@ -60,6 +60,7 @@ export const rules: Record<string, Rule.RuleModule> = {
           let caseInsensitive = false;
           let unicode = false;
           let dotAll = false;
+          let multiLine = false;
 
           for (const flag of flags.split('')) {
             if (flag === 'i') {
@@ -68,6 +69,8 @@ export const rules: Record<string, Rule.RuleModule> = {
               unicode = true;
             } else if (flag === 's') {
               dotAll = true;
+            } else if (flag === 'm') {
+              multiLine = true;
             } else if (flag !== 'g') {
               if (!ignoreError) {
                 context.report({
@@ -98,6 +101,7 @@ export const rules: Record<string, Rule.RuleModule> = {
               caseInsensitive,
               unicode,
               dotAll,
+              multiLine,
             });
           } catch (e: any) {
             if (!ignoreError) {

@@ -24,6 +24,10 @@ describe('Eslint Plugin Redos Detector', () => {
             code: '/a/s',
             options: [{ ignoreError }],
           },
+          {
+            code: '/a/m',
+            options: [{ ignoreError }],
+          },
           ...(ignoreError
             ? [
                 {
@@ -46,6 +50,11 @@ describe('Eslint Plugin Redos Detector', () => {
           },
           {
             code: '/a+A+/i',
+            options: [{ ignoreError }],
+            errors: 1,
+          },
+          {
+            code: '/a+a+/m',
             options: [{ ignoreError }],
             errors: 1,
           },
