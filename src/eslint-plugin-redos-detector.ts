@@ -71,7 +71,7 @@ export const rules: Record<string, Rule.RuleModule> = {
               dotAll = true;
             } else if (flag === 'm') {
               multiLine = true;
-            } else if (flag !== 'g') {
+            } else if (flag !== 'g' && flag !== 'y' && flag !== 'd') {
               if (!ignoreError) {
                 context.report({
                   node,
