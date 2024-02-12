@@ -43,7 +43,7 @@
     "eslint": "8.56.0",
     "husky": "8.0.3",
     "jest": "29.7.0",
-    "lint-staged": "15.2.1",
+    "lint-staged": "15.2.2",
     "micromatch": "4.0.5",
     "prettier": "3.2.5",
     "redos-detector": "5.1.0",
