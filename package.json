@@ -49,7 +49,7 @@
     "redos-detector": "5.1.0",
     "rollup": "4.21.0",
     "ts-jest": "29.2.5",
-    "tslib": "2.6.3",
+    "tslib": "2.7.0",
     "typescript": "5.5.4"
   },
   "peerDependencies": {
