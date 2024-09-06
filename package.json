@@ -47,7 +47,7 @@
     "micromatch": "4.0.8",
     "prettier": "3.3.3",
     "redos-detector": "5.1.0",
-    "rollup": "4.21.1",
+    "rollup": "4.21.2",
     "ts-jest": "29.2.5",
     "tslib": "2.7.0",
     "typescript": "5.5.4"
