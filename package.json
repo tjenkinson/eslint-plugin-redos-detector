@@ -46,7 +46,7 @@
     "lint-staged": "15.5.2",
     "micromatch": "4.0.8",
     "prettier": "3.8.1",
-    "redos-detector": "6.1.2",
+    "redos-detector": "6.1.4",
     "rollup": "4.57.1",
     "ts-jest": "29.4.6",
     "tslib": "2.8.1",
