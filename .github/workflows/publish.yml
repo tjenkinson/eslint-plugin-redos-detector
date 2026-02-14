@@ -32,8 +32,6 @@ jobs:
           CI: true
       - name: publish
         run: |
-          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> .npmrc
           npm publish --provenance
         env:
           CI: true
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
